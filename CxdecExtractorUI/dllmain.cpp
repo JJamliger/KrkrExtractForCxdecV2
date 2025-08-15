@@ -104,7 +104,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
             }
             else
             {
-                ::MessageBoxW(nullptr, L"CxdecExtractor.dll加载失败", L"错误", MB_OK);
+                ::MessageBoxW(nullptr, L"CxdecExtractor.dll 불러오기 실패", L"오류", MB_OK);
             }
             break;
         }

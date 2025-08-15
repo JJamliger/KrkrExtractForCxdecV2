@@ -55,7 +55,7 @@ INT_PTR CALLBACK LoaderDialogWindProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM
 				case IDC_KeyDumper:
 				{
 					//NotImpl
-					::MessageBoxW(nullptr, L"此功能暂未实现", L"错误", MB_OK);
+					::MessageBoxW(nullptr, L"해당 기능은 아직 구현되지 않았습니다.", L"오류", MB_OK);
 					break;
 				}
 			}
@@ -79,7 +79,7 @@ INT_PTR CALLBACK LoaderDialogWindProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM
 				}
 				else
 				{
-					::MessageBoxW(nullptr, L"创建进程错误", L"错误", MB_OK);
+					::MessageBoxW(nullptr, L"프로세스 생성 오류", L"오류", MB_OK);
 				}
 			}
 			return TRUE;
@@ -150,7 +150,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		}
 		else
 		{
-			::MessageBoxW(nullptr, L"请拖拽游戏主程序到启动器", L"错误", MB_OK);
+			::MessageBoxW(nullptr, L"게임 메인 프로그램을 런처로 드래그하십시오.", L"오류", MB_OK);
 		}
 	}
 	return 0;
